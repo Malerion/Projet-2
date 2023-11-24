@@ -47,7 +47,7 @@ def page_recommandation():
     
     # Charger les données des films
     chemin_fichier_films = 'https://drive.google.com/file/d/16O94vNDUFSCSW9VZmqOtxlZjfDd0tjVP/view?usp=sharing'
-    df_movies = pd.read_csv(chemin_fichier_films, sep='t')
+    df_movies = pd.read_csv(chemin_fichier_films, sep='\t')
 
     # Remplacer les valeurs manquantes dans la colonne 'genres'
     df_movies['genres'] = df_movies['genres'].fillna('')
