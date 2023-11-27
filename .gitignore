@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+# Ignore les fichiers de données
+filtered_data.csv
+titleBasics.tsv
+titleRatings.tsv
+
+=======
+# Ignore les fichiers de données
+filtered_data.csv
+titleBasics.tsv
+titleRatings.tsv
+
+>>>>>>> 7225b08add4f6618f69612a399e9922233a676ff
