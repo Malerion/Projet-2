@@ -46,8 +46,9 @@ def page_recommandation():
              "la diversité des recommandations et trouvez des films qui correspondent à vos goûts cinématographiques !")
     
     # Charger les données des films
-    chemin_fichier_films = 'C:\\Users\\maxim\\OneDrive\\Bureau\\PROJET 2 NOTE PAR GENRE\\filtered_data.csv'
-    df_movies = pd.read_csv(chemin_fichier_films)
+   lien_drive_films = 'https://drive.google.com/file/d/16O94vNDUFSCSW9VZmqOtxlZjfDd0tjVP/view?usp=drive_link'
+   df_movies = pd.read_csv(lien_drive_films)
+    
 
     # Remplacer les valeurs manquantes dans la colonne 'genres'
     df_movies['genres'] = df_movies['genres'].fillna('')
@@ -161,8 +162,10 @@ def page_analyse():
              "les mieux notés, le cinéma peut mettre en avant ces catégories pour attirer un public plus large. Cette analyse peut "
              "aider le client à prendre des décisions éclairées sur la programmation et la mise en avant de certains types de films.")
     # Charger les fichiers cleaned
-   title_basics = pd.read_csv('C:\\Users\\maxim\\OneDrive\\Bureau\\PROJET 2 CLEANED FILES\\titleBasics_cleaned.tsv', sep='\t')
-    title_ratings = pd.read_csv('C:\\Users\\maxim\\OneDrive\\Bureau\\PROJET 2 CLEANED FILES\\titleRatings_cleaned.tsv', sep='\t')
+   lien_drive_basics = 'https://drive.google.com/file/d/18JYuj5VawGilFgvNjBfad5bo-j_6tQRi/view?usp=drive_link'
+   title_basics = pd.read_csv(lien_drive_basics, sep='\t')
+   lien_drive_ratings = 'https://drive.google.com/file/d/1HPYot1X3aY-iFOJpKkRHlZE-zL2hFKT7/view?usp=drive_link'
+   title_ratings = pd.read_csv(lien_drive_ratings, sep='\t')
 
     # Convertir la colonne 'startYear' en numérique
     title_basics['startYear'] = pd.to_numeric(title_basics['startYear'], errors='coerce')
